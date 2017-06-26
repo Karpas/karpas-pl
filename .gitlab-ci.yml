@@ -3,7 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Crate artifact'
+  - echo 'Crate artifact from public'
   artifacts:
     paths:
     - public
