@@ -3,93 +3,190 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <meta name="description" content="KarPas — działalność Karola Pasternaka z Łodzi. Druk 3D, drobne projekty na zamówienie oraz kameralne studio solarium.">
+    <meta name="author" content="KarPas">
+    <link rel="icon" type="image/png" href="assets/ico/favicon.png">
 
-    <title>KarPas - Aplikacje biznesowe, Oprogramowanie, Doradztwo IT</title>
+    <title>KarPas – Druk 3D, prototypowanie, IT consulting</title>
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Asap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-        <link href="http://externalcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-    <![endif]-->
   </head>
-    <body data-spy="scroll" data-target=".navbar">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#1B1A1A;">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">KarPas</a>
-                </div>
-            </div>
-        </nav>
+  <body>
+    <header class="site-header" id="start">
+      <nav class="top-nav">
+        <a class="brand" href="#start">KarPas</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Pokaż menu</span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#approach">Podejście</a></li>
+          <li><a href="#druk3d">Druk 3D</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
 
-        <div>
-            <div class="container header greeting">
-                <div class="row centered text-center">
-                    <div class="col-sm-12 greeting-text">
-                        <img src="assets/img/orange.png" style="width: 550px">
-                        <h3 class="light-text">Oprogramowanie & Doradztwo IT | info@karpas.pl</h3>
-                    </div>
-                </div>
-            </div>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>KarPas – Druk 3D, prototypowanie, IT consulting</h1>
+          <p class="lead">
+            KarPas to moje firmowe zaplecze. Przyjmuję zlecenia na szybkie wydruki i prototypy 3D,
+            pomagam dopracować niewielkie projekty.
+          </p>
         </div>
-
-        <div id="contact" class="navbar-fix">
-            <div class="spacer light-background">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <h4>KONTAKT</h4>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <address>
-                                <strong>KarPas</strong><br>
-                                Łódź, Polska<br>
-                                NIP: 7272689686<br>
-                                REGON: 101691641<br>
-                                <abbr title="Email">E:</abbr> <a href="mailto:info@karpas.pl">info@karpas.pl</a>
-                            </address>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="map container-fluid"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-card">
+          <div class="hero-card__title">Jak to działa</div>
+          <ul class="hero-card__list">
+            <li>Zlecenia 3D realizuję po godzinach – idealne na krótkie serie i prototypy.</li>
+            <li>Drobne projekty przygotowuję w porozumieniu z klientem, bez rozbudowanej formalności.</li>
+          </ul>
         </div>
+      </div>
+    </header>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/Chart.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script src="assets/js/main.js"></script>
-        
-        <script type="text/javascript">
-            $(function () {
-                $("[rel='tooltip']").tooltip();
-            });
+    <main>
+      <section class="section" id="oferta">
+        <div class="section-header">
+          <h2>Co robimy w ramach KarPas</h2>
+          <p>
+            Działalność łączy moje techniczne doświadczenia z bardziej lokalnymi usługami. Nie buduję
+            software house'u – stawiam na pragmatyczne, niewielkie realizacje i dobrą atmosferę.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Druk 3D na zamówienie</h3>
+            <p>
+              Przygotowuję prototypy, uchwyty i elementy użytkowe w technice FDM. Pomagam dobrać
+              materiał, ustawienia i końcową obróbkę, by wydruk spełnił swoją funkcję.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Drobne projekty</h3>
+            <p>
+              Projektuję proste obudowy, adaptery czy makiety. Jeśli trzeba, wspieram w podstawowej
+              dokumentacji lub przeniesieniu pomysłu na model 3D.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Consulting i prototypy</h3>
+            <p>
+              Masz pomysł na produkt lub funkcję i chcesz go szybko zweryfikować? Pomagam poukładać
+              założenia, zaplanować eksperyment i – jeśli trzeba – przygotować lekką aplikację,
+              żeby sprawdzić, czy koncepcja działa.
+            </p>
+          </article>
+        </div>
+      </section>
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-15511779-1']);
-            _gaq.push(['_trackPageview']);
+      <section class="section accent" id="approach">
+        <div class="section-content narrow">
+          <h2>Podejście</h2>
+          <div class="split">
+            <p>
+              Każdy projekt zaczynam od rozmowy o potrzebie. Omawiamy oczekiwania, możliwości techniczne i ustalamy realny termin.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
+      <section class="section" id="druk3d">
+        <div class="section-header">
+          <h2>Druk 3D</h2>
+          <p>
+            Drukuję w krótkich seriach i prototypach. Jeśli masz pomysł na element, którego nie znajdziesz
+            w sklepie, sprawdzimy, jak zamienić go w gotowy model.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Druk z filamentów</h3>
+            <p>
+              PLA, PETG oraz elastyczne TPU – dobieram filament pod wytrzymałość i estetykę,
+              a wydruki oczyszczam i przygotowuję do montażu.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Projektowanie modeli</h3>
+            <p>
+              Korzystam z narzędzi CAD, aby tworzyć uchwyty, adaptery i obudowy. Przygotowuję pliki STL,
+              konsultuję iteracje i pomagam zoptymalizować pod druk.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Skanowanie i digitalizacja</h3>
+            <p>
+              Dysponuję podstawowym zestawem do skanowania elementów. Wspólnie możemy odtworzyć
+              niedostępne części lub przygotować bazę do dalszego modelowania.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <script>
-            page.init();
-        </script>
-    </body>
+      <section class="section" id="contact">
+        <div class="contact-card">
+          <div class="contact-info">
+            <h3>KarPas</h3>
+            <p>Łódź, Polska</p>
+            <p>NIP: 7272689686</p>
+            <p>REGON: 101691641</p>
+            <a class="contact-link" href="mailto:info@karpas.pl">info@karpas.pl</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> KarPas. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+      const year = document.getElementById('year');
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+
+      const setYear = () => {
+        if (year) {
+          year.textContent = new Date().getFullYear();
+        }
+      };
+
+      setYear();
+
+      if (toggle && links) {
+        document.body.classList.add('js-nav-ready');
+        const closeMenu = () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          links.classList.remove('is-open');
+        };
+
+        const toggleMenu = () => {
+          const expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          links.classList.toggle('is-open');
+        };
+
+        toggle.addEventListener('click', toggleMenu);
+        links.addEventListener('click', event => {
+          if (event.target.closest('a')) {
+            closeMenu();
+          }
+        });
+
+        window.addEventListener('resize', () => {
+          if (window.innerWidth > 768) {
+            closeMenu();
+          }
+        });
+
+        closeMenu();
+      }
+    </script>
+  </body>
 </html>
