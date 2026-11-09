@@ -1,7 +1,9 @@
 # KarPas — studio website
 
-Static Polish-language studio site, published from `public/` by GitLab Pages.
-The committed browser bundle keeps deployment compatible with the existing Pages pipeline.
+Static Polish-language studio site. GitHub Actions publishes `public/` to GitHub Pages.
+The legacy GitLab Pages pipeline also serves `public/`. The custom domain must point
+to the selected Pages host; pushing code does not update DNS.
+The committed browser bundle keeps deployment independent of a build on the server.
 
 ## Build
 
