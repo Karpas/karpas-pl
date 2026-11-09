@@ -1,192 +1,352 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KarPas — działalność Karola Pasternaka z Łodzi. Druk 3D, drobne projekty na zamówienie oraz kameralne studio solarium.">
-    <meta name="author" content="KarPas">
-    <link rel="icon" type="image/png" href="assets/ico/favicon.png">
-
-    <title>KarPas – Druk 3D, prototypowanie, IT consulting</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Pomysły nie są płaskie. KarPas — niezależna pracownia druku 3D, projektowania i prototypowania z Łodzi. Nadaj swojemu pomysłowi trzeci wymiar."
+    />
+    <meta name="theme-color" content="#dcff55" />
+    <title>Druk 3D Łódź, projektowanie i prototypy — KarPas</title>
+    <link rel="canonical" href="https://karpas.pl/" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="KarPas" />
+    <meta property="og:url" content="https://karpas.pl/" />
+    <meta property="og:title" content="Pomysły nie są płaskie. Druk 3D — KarPas" />
+    <meta property="og:description" content="Niezależna pracownia w Łodzi. Druk 3D, projektowanie CAD i prototypy. Sprawdź orientacyjną cenę w kalkulatorze." />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"KarPas","url":"https://karpas.pl/","email":"info@karpas.pl","founder":{"@type":"Person","name":"Karol Pasternak"},"address":{"@type":"PostalAddress","addressLocality":"Łódź","addressCountry":"PL"}}</script>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="site-header" id="start">
-      <nav class="top-nav">
-        <a class="brand" href="#start">KarPas</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-          <span class="sr-only">Pokaż menu</span>
-          <span class="menu-bar"></span>
-          <span class="menu-bar"></span>
-          <span class="menu-bar"></span>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="hero" id="start">
+      <nav class="navigation" aria-label="Główna nawigacja">
+        <a class="wordmark" href="#start" aria-label="KarPas — początek"
+          ><span class="brand-symbol" aria-hidden="true">✳</span>karpas<span
+            class="brand-dot"
+            >.</span
+          ></a
+        >
+        <span class="nav-studio"
+          >NIEZALEŻNA PRACOWNIA<br />ŁÓDŹ, PL / 51°46′ N</span
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation-links"
+        >
+          <span>Menu</span><i aria-hidden="true"></i>
         </button>
-        <ul class="nav-links" id="primary-navigation">
-          <li><a href="#oferta">Oferta</a></li>
-          <li><a href="#approach">Podejście</a></li>
-          <li><a href="#druk3d">Druk 3D</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
+        <div class="navigation-links" id="navigation-links">
+          <a href="#possibilities">Możliwości</a
+          ><a href="#process">Od pomysłu do rzeczy</a
+          ><a class="nav-cta" href="https://3d.karpas.pl"
+            >Wyceń druk <span>↗</span></a
+          >
+        </div>
       </nav>
-
-      <div class="hero">
-        <div class="hero-content">
-          <h1>KarPas – Druk 3D, prototypowanie, IT consulting</h1>
-          <p class="lead">
-            KarPas to moje firmowe zaplecze. Przyjmuję zlecenia na szybkie wydruki i prototypy 3D,
-            pomagam dopracować niewielkie projekty.
-          </p>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card__title">Jak to działa</div>
-          <ul class="hero-card__list">
-            <li>Zlecenia 3D realizuję po godzinach – idealne na krótkie serie i prototypy.</li>
-            <li>Drobne projekty przygotowuję w porozumieniu z klientem, bez rozbudowanej formalności.</li>
-          </ul>
-        </div>
+      <div class="hero-heading">
+        <span class="eyebrow hero-eyebrow"
+          ><span class="live-dot"></span> STUDIO DRUKU 3D & DOBRYCH
+          POMYSŁÓW</span
+        >
+        <h1>
+          <span>POMYSŁY</span><span>NIE SĄ</span
+          ><span class="hero-last">PŁASKIE<span class="period">.</span></span>
+        </h1>
+      </div>
+      <div class="hero-scene scene-shell">
+        <div class="scene-fallback" aria-hidden="true"></div>
+        <canvas
+          id="hero-canvas"
+          aria-label="Interaktywna, płynna rzeźba w kolorze fioletowego metalu"
+          role="img"
+        ></canvas
+        ><span class="scene-coordinate" aria-hidden="true">X 02.34<br />Y 08.91<br />Z ∞</span
+        ><span class="orbit-label" aria-hidden="true">FORMA NIE MUSI BYĆ OCZYWISTA.</span>
+      </div>
+      <div class="hero-note">
+        <span class="tiny-cross" aria-hidden="true">+</span>
+        <p>Ty masz „a gdyby tak…”.<br />Ja mam narzędzia, żeby to sprawdzić.</p>
+        <a class="text-link" href="#possibilities"
+          >Wyjdź poza płaszczyznę <span>↓</span></a
+        >
+      </div>
+      <button class="shape-toggle" type="button" aria-pressed="false">
+        Przekształć formę <span aria-hidden="true">↻</span>
+      </button>
+      <div class="hero-foot">
+        <span>PROJEKTOWANIE / DRUK 3D / PROTOTYPY</span
+        ><button class="motion-toggle" type="button" aria-pressed="false">
+          <span aria-hidden="true">Ⅱ</span> Wstrzymaj ruch</button
+        ><span class="hero-scroll"
+          >PRZEWIŃ I ZOBACZ, CO SIĘ STANIE <span>↓</span></span
+        >
       </div>
     </header>
-
-    <main>
-      <section class="section" id="oferta">
-        <div class="section-header">
-          <h2>Co robimy w ramach KarPas</h2>
-          <p>
-            Działalność łączy moje techniczne doświadczenia z bardziej lokalnymi usługami. Nie buduję
-            software house'u – stawiam na pragmatyczne, niewielkie realizacje i dobrą atmosferę.
-          </p>
+    <main id="main">
+      <section class="intro" id="possibilities">
+        <div class="section-topline">
+          <span>01 / POTENCJAŁ</span><span>MAŁA PRACOWNIA. OTWARTA GŁOWA.</span>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Druk 3D na zamówienie</h3>
+        <div class="intro-layout">
+          <h2>
+            Nie wszystko<br />da się kupić.<br /><span class="serif"
+              >Można to zrobić.</span
+            >
+          </h2>
+          <div class="intro-copy">
+            <span class="asterisk" aria-hidden="true">✳</span>
             <p>
-              Przygotowuję prototypy, uchwyty i elementy użytkowe w technice FDM. Pomagam dobrać
-              materiał, ustawienia i końcową obróbkę, by wydruk spełnił swoją funkcję.
+              Ten jeden uchwyt. Obudowa, która pasuje. Prototyp, od którego
+              wszystko się zaczyna.
             </p>
-          </article>
-          <article class="card">
-            <h3>Drobne projekty</h3>
             <p>
-              Projektuję proste obudowy, adaptery czy makiety. Jeśli trzeba, wspieram w podstawowej
-              dokumentacji lub przeniesieniu pomysłu na model 3D.
+              Łączę druk 3D, projektowanie i doświadczenie w IT. Pomagam przejść
+              od „mam pomysł” do „właśnie o to chodziło”. Bez wielkiej agencji
+              po drodze.
             </p>
-          </article>
-          <article class="card">
-            <h3>Consulting i prototypy</h3>
+            <a class="pill dark" href="mailto:info@karpas.pl"
+              >Opowiedz mi o pomyśle <span>↗</span></a
+            >
+          </div>
+        </div>
+        <div class="capabilities">
+          <a class="capability capability-print" href="https://3d.karpas.pl">
+            <div class="cap-head">
+              <span>01 / WYTWARZANIE</span><span>↗</span>
+            </div>
+            <div class="technical-visual print-visual" aria-hidden="true">
+              <div class="print-stack">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                ><i></i><i></i><i></i>
+              </div>
+              <span class="technical-label">WARSTWA / 0,20 MM</span>
+            </div>
+            <h3>Od pliku<br />do przedmiotu.</h3>
             <p>
-              Masz pomysł na produkt lub funkcję i chcesz go szybko zweryfikować? Pomagam poukładać
-              założenia, zaplanować eksperyment i – jeśli trzeba – przygotować lekką aplikację,
-              żeby sprawdzić, czy koncepcja działa.
+              Druk FDM. Elementy użytkowe, prototypy i krótkie serie. Materiał i
+              wykończenie dopasowane do zadania.
             </p>
-          </article>
+            <span class="cap-tag">DRUK 3D</span>
+          </a>
+          <a class="capability capability-design" href="mailto:info@karpas.pl?subject=Projekt%203D">
+            <div class="cap-head">
+              <span>02 / PROJEKTOWANIE</span><span>↗</span>
+            </div>
+            <div class="technical-visual design-visual" aria-hidden="true">
+              <svg viewBox="0 0 400 240" fill="none">
+                <path
+                  d="M90 150 200 85 310 150 200 215Z M90 150V80L200 15 310 80V150 M200 85V15 M200 215V145 M90 80 200 145 310 80"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                />
+                <path
+                  d="M55 160V65M47 70H63M47 155H63M95 224 195 282"
+                  stroke="currentColor"
+                />
+                <circle
+                  cx="200"
+                  cy="145"
+                  r="36"
+                  stroke="currentColor"
+                  stroke-dasharray="3 5"
+                />
+                <path d="M185 145H215M200 130V160" stroke="currentColor" /></svg
+              ><span class="technical-label">X × Y × TWOJA POTRZEBA</span>
+            </div>
+            <h3>Najpierw<br />dobry model.</h3>
+            <p>
+              Projektowanie CAD, poprawki modeli i podstawowa digitalizacja.
+              Obudowy, adaptery, brakujące elementy.
+            </p>
+            <span class="cap-tag">CAD & MODELOWANIE</span>
+          </a>
+          <a class="capability capability-code" href="mailto:info@karpas.pl?subject=Konsultacja%20techniczna">
+            <div class="cap-head">
+              <span>03 / EKSPERYMENTOWANIE</span><span>↗</span>
+            </div>
+            <div class="technical-visual code-visual" aria-hidden="true">
+              <span class="code-bracket">{</span
+              ><span class="code-orbit">✳</span
+              ><span class="code-bracket">}</span
+              ><span class="technical-label">POMYSŁ → TEST → ITERACJA</span>
+            </div>
+            <h3>Sprawdź,<br />zanim zbudujesz.</h3>
+            <p>
+              Konsultacje techniczne, eksperymenty i lekkie aplikacje.
+              Weryfikacja pomysłu, zanim stanie się dużym projektem.
+            </p>
+            <span class="cap-tag">IT & PROTOTYPOWANIE</span>
+          </a>
         </div>
       </section>
-
-      <section class="section accent" id="approach">
-        <div class="section-content narrow">
-          <h2>Podejście</h2>
-          <div class="split">
-            <p>
-              Każdy projekt zaczynam od rozmowy o potrzebie. Omawiamy oczekiwania, możliwości techniczne i ustalamy realny termin.
+      <section class="process" id="process" aria-labelledby="process-heading">
+        <div class="process-sticky">
+          <div class="section-topline">
+            <span>02 / TRANSFORMACJA</span
+            ><span>PRZEWIJAJ. POMYSŁ NABIERA KSZTAŁTU.</span>
+          </div>
+          <div class="process-title">
+            <h2 id="process-heading">
+              Od „co jeśli”<br />do <span class="serif">„to jest to”.</span>
+            </h2>
+          </div>
+          <div class="process-scene scene-shell">
+            <div class="scene-fallback" aria-hidden="true"></div>
+            <canvas
+              id="process-canvas"
+              role="img"
+              aria-label="Rzeźba rozkłada się na warstwy i zmienia w gotowy breloczek podczas przewijania"
+            ></canvas>
+          </div>
+          <div class="process-caption" aria-live="off">
+            <span class="process-counter">01 — 03</span>
+            <h3 id="process-step-title">
+              Wszystko zaczyna się<br />od rozmowy.
+            </h3>
+            <p id="process-step-copy">
+              Pokaż szkic, opisz problem albo wyślij plik. Ustalimy, czego
+              naprawdę potrzebujesz.
             </p>
+          </div>
+          <div class="process-rail" aria-label="Etapy realizacji">
+            <a class="active" href="#process-idea"><span>01</span>POMYSŁ</a
+            ><a href="#process-layers"><span>02</span>PROTOTYP</a
+            ><a href="#process-object"><span>03</span>PRZEDMIOT</a>
+          </div>
+        </div>
+        <div class="process-beats" aria-hidden="true">
+          <div id="process-idea"></div>
+          <div id="process-layers"></div>
+          <div id="process-object"></div>
+        </div>
+        <div class="process-accessible sr-only">
+          <h3>1. Rozmowa</h3>
+          <p>Opisujesz potrzebę. Ustalamy zakres i realny termin.</p>
+          <h3>2. Prototyp</h3>
+          <p>Dobieramy materiał, przygotowujemy model i sprawdzamy detale.</p>
+          <h3>3. Przedmiot</h3>
+          <p>
+            Drukuję i wykańczam element. Zlecenia realizuję po godzinach, w
+            pojedynczych sztukach i krótkich seriach.
+          </p>
+        </div>
+      </section>
+      <section class="material-lab" id="materials">
+        <div class="section-topline">
+          <span>03 / MAŁE LABORATORIUM</span><span>DOTKNIJ MOŻLIWOŚCI.</span>
+        </div>
+        <div class="lab-layout">
+          <div class="lab-copy">
+            <h2>
+              Ta sama idea.<br />Inny <span class="serif">charakter.</span>
+            </h2>
+            <p>
+              Materiał zmienia wszystko. Wybierz i zobacz, od czego możesz
+              zacząć.
+            </p>
+            <div
+              class="material-tabs"
+              role="group"
+              aria-label="Wybierz materiał"
+            >
+              <button type="button" data-material="pla" aria-pressed="true">
+                PLA <span>01</span></button
+              ><button type="button" data-material="petg" aria-pressed="false">
+                PETG <span>02</span></button
+              ><button type="button" data-material="tpu" aria-pressed="false">
+                TPU <span>03</span>
+              </button>
+            </div>
+            <div class="material-description" aria-live="polite">
+              <span id="material-category">ESTETYKA & POMYSŁ</span>
+              <h3 id="material-title">Pierwsza forma<br />Twojego pomysłu.</h3>
+              <p id="material-copy">
+                Dekoracje, makiety i prototypy. PLA dobrze sprawdza się tam,
+                gdzie liczy się detal, a element nie pracuje w wysokiej
+                temperaturze.
+              </p>
+            </div>
+            <a class="text-link" href="https://3d.karpas.pl"
+              >Dobierz parametry i sprawdź cenę <span>↗</span></a
+            >
+          </div>
+          <div class="lab-art">
+            <div class="lab-circle"></div>
+            <div class="lab-scene scene-shell">
+              <div class="scene-fallback" aria-hidden="true"></div>
+              <canvas
+                id="material-canvas"
+                role="img"
+                aria-label="Przykładowa forma 3D prezentująca wybrany materiał"
+              ></canvas>
+            </div>
+            <span class="lab-label" id="material-swatch">PLA / VIOLET</span
+            ><span class="lab-disclaimer"
+              >Wizualizacja poglądowa.<br />Kolor ustalamy przy
+              zamówieniu.</span
+            >
           </div>
         </div>
       </section>
-
-      <section class="section" id="druk3d">
-        <div class="section-header">
-          <h2>Druk 3D</h2>
-          <p>
-            Drukuję w krótkich seriach i prototypach. Jeśli masz pomysł na element, którego nie znajdziesz
-            w sklepie, sprawdzimy, jak zamienić go w gotowy model.
-          </p>
+      <section class="calculator-invite">
+        <div class="invite-top">
+          <span>MASZ JUŻ WYMIARY LUB PLIK?</span
+          ><span>MNIEJ ZGADYWANIA. WIĘCEJ TWORZENIA.</span>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Druk z filamentów</h3>
-            <p>
-              PLA, PETG oraz elastyczne TPU – dobieram filament pod wytrzymałość i estetykę,
-              a wydruki oczyszczam i przygotowuję do montażu.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Projektowanie modeli</h3>
-            <p>
-              Korzystam z narzędzi CAD, aby tworzyć uchwyty, adaptery i obudowy. Przygotowuję pliki STL,
-              konsultuję iteracje i pomagam zoptymalizować pod druk.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Skanowanie i digitalizacja</h3>
-            <p>
-              Dysponuję podstawowym zestawem do skanowania elementów. Wspólnie możemy odtworzyć
-              niedostępne części lub przygotować bazę do dalszego modelowania.
-            </p>
-          </article>
+        <a href="https://3d.karpas.pl" class="invite-link"
+          ><span>ILE TO<br /><span class="serif">BĘDZIE?</span></span
+          ><span class="invite-arrow" aria-hidden="true">↗</span></a
+        >
+        <div class="invite-bottom">
+          <p>
+            Wrzuć STL lub wpisz wymiary.<br />Sprawdź orientacyjny koszt druku w
+            kalkulatorze.
+          </p>
+          <a class="pill lime" href="https://3d.karpas.pl"
+            >Uruchom konfigurator <span>↗</span></a
+          >
         </div>
       </section>
-
-      <section class="section" id="contact">
-        <div class="contact-card">
-          <div class="contact-info">
-            <h3>KarPas</h3>
-            <p>Łódź, Polska</p>
-            <p>NIP: 7272689686</p>
-            <p>REGON: 101691641</p>
-            <a class="contact-link" href="mailto:info@karpas.pl">info@karpas.pl</a>
-          </div>
+      <section class="contact" id="contact">
+        <div class="section-topline">
+          <span>04 / TWÓJ RUCH</span
+          ><span>PRACOWNIA JEDNEGO CZŁOWIEKA. WIELE MOŻLIWOŚCI.</span>
+        </div>
+        <div class="contact-heading">
+          <h2>Masz coś<br /><span class="serif">na myśli?</span></h2>
+          <a
+            class="contact-orb"
+            href="mailto:info@karpas.pl"
+            aria-label="Napisz na info@karpas.pl"
+            >↗</a
+          >
+        </div>
+        <div class="contact-bottom">
+          <a class="contact-email" href="mailto:info@karpas.pl"
+            >info@karpas.pl</a
+          >
+          <p>
+            Karol Pasternak / KarPas<br />Łódź, Polska<br /><span
+              >Pracuję po godzinach. Termin ustalimy wspólnie.</span
+            >
+          </p>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> KarPas. Wszystkie prawa zastrzeżone.</p>
+    <footer class="footer">
+      <a class="wordmark" href="#start"
+        ><span class="brand-symbol" aria-hidden="true">✳</span>karpas.</a
+      ><span>© <span id="year"></span> KarPas</span
+      ><span>NIP 7272689686 / REGON 101691641</span
+      ><a href="#start">WRÓĆ NA GÓRĘ ↑</a>
     </footer>
-
-    <script>
-      const year = document.getElementById('year');
-      const toggle = document.querySelector('.menu-toggle');
-      const links = document.querySelector('.nav-links');
-
-      const setYear = () => {
-        if (year) {
-          year.textContent = new Date().getFullYear();
-        }
-      };
-
-      setYear();
-
-      if (toggle && links) {
-        document.body.classList.add('js-nav-ready');
-        const closeMenu = () => {
-          toggle.setAttribute('aria-expanded', 'false');
-          links.classList.remove('is-open');
-        };
-
-        const toggleMenu = () => {
-          const expanded = toggle.getAttribute('aria-expanded') === 'true';
-          toggle.setAttribute('aria-expanded', String(!expanded));
-          links.classList.toggle('is-open');
-        };
-
-        toggle.addEventListener('click', toggleMenu);
-        links.addEventListener('click', event => {
-          if (event.target.closest('a')) {
-            closeMenu();
-          }
-        });
-
-        window.addEventListener('resize', () => {
-          if (window.innerWidth > 768) {
-            closeMenu();
-          }
-        });
-
-        closeMenu();
-      }
-    </script>
+    <script type="module" src="assets/js/studio.bundle.js"></script>
   </body>
 </html>

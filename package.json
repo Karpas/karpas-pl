@@ -1,0 +1,11 @@
+{
+  "name": "karpas-studio",
+  "private": true,
+  "scripts": {
+    "build": "esbuild public/assets/js/studio.js --bundle --minify --format=esm --target=es2020 --outfile=public/assets/js/studio.bundle.js",
+    "preview": "python3 -m http.server 8080 --bind 127.0.0.1 --directory public"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}
